@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!--CATEGORY 1: WHAT IS * -->
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+            <think><set name="r1"><star/></set></think>
+            <condition name="r1" value="long dash term knowledge">
+                Long-term knowledge is valid every time a programme is run.
+            </condition>
+            <condition name="r1" value="short dash term knowledge">
+                Short-term knowledge is only valid for a particular instance or run of a programme.
+            </condition>
+            <condition name="r1" value="generic knowledge">
+                Generic knowledge is relevant to more than one application or domain.
+            </condition>
+            <condition name="r1" value="domain dash specific knowledge">
+                Domain-specific knowledge is only applicable to one specific application or domain.
+            </condition>
+            <condition name="r1" value="a fact">
+                A fact is a statement which asserts that a relationship holds for an object-subject pair.
+            </condition>
+            <condition name="r1" value="a rule">
+                A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+            </condition>
+            <condition name="r1" value="a rule mybot">
+                A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+            </condition>
+        </template>
+    </category>
+    <!--CATEGORY 2: * EXAMPLE * -->
+    <category>
+        <pattern>* EXAMPLE *</pattern>
+        <template>
+            <think><set name="l3"><star index="1"/></set></think>
+            <think><set name="r3"><star index="2"/></set></think>
+            <!--SUBCAT 1: GIVE ME AN EXAMPLE OF *-->
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of long dash term generic knowledge">
+                    The equations of motion used to calculate the flight-path of a bird in the game Angry Birds.
+                </condition>
+            </condition>
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of long dash term domain dash specific knowledge">
+                    The weight of the different types of birds in the game Angry Birds.
+                </condition>
+            </condition>
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of short dash term generic knowledge">
+                    The date on which a specific episode of Angry Birds is played is generic because it could also be used by another programme.
+                </condition> 
+            </condition>
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of short dash term domain dash specific knowledge">
+                    The number of birds that a user has fired in a particular episode of Angry Birds.
+                </condition>  
+            </condition>
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of a rule">
+                    If isUWEStaff(X) then hasUWEPhone (X).
+                </condition> 
+            </condition>
+            <condition name="l3" value="Give me an">
+                <condition name="r3" value="of a fact">
+                    Jim Smith from UWE hasUWEPhoneNumber 0117 3287417.
+                </condition> 
+            </condition>
+            <!--SUBCAT 2: PROVIDE AN -->
+            <condition name="l3" value="Provide an">
+                <condition name="r3" value="of long dash term generic knowledge">
+                    The equations of motion used to calculate the flight-path of a bird in the game Angry Birds.
+                </condition>
+            </condition>
+            <condition name="l3" value="Provide an">
+                <condition name="r3" value="of long dash term domain dash specific knowledge">
+                    The weight of the different types of birds in the game Angry Birds.
+                </condition>
+            </condition>
+            <condition name="l3" value="Provide an">
+                <condition name="r3" value="of short dash term generic knowledge">
+                    The date on which a specific episode of Angry Birds is played is generic because it could also be used by another programme.
+                </condition>
+            </condition>
+            <condition name="l3" value="Provide an">
+                <condition name="r3" value="of short dash term domain dash specific knowledge">
+                    The number of birds that a user has fired in a particular episode of Angry Birds.
+                </condition>
+            </condition>
+            <!--SUBCAT 3: VARIATIONS-->
+            <condition name="l3" value="Please provide an">
+                <condition name="r3" value="of a rule">
+                    If isUWEStaff(X) then hasUWEPhone (X).
+                </condition>
+            </condition>
+            <condition name="l3" value="Please provide an">
+                <condition name="r3" value="of a fact">
+                    Jim Smith from UWE hasUWEPhoneNumber 0117 3287417.
+                </condition>
+            </condition>
+            <condition name="l3" value="Please give me an">
+                <condition name="r3" value="of a rule">
+                    If isUWEStaff(X) then hasUWEPhone (X).
+                </condition>
+            </condition>
+        </template>
+    </category>
+    <!--CATEGORY 3: * KNOWLEDGE -->
+    <category>
+        <pattern>* KNOWLEDGE</pattern>
+        <template>
+            <think><set name="l4"><star/></set></think>
+            <condition name="l4" value="Describe long dash term">
+                Long-term knowledge is valid every time a programme is run.
+            </condition>
+            <condition name="l4" value="Describe short dash term">
+                Short-term knowledge is only valid for a particular instance or run of a programme.
+            </condition>
+            <condition name="l4" value="Describe generic">
+                Generic knowledge is relevant to more than one application or domain.
+            </condition>
+            <condition name="l4" value="Describe domain dash specific ">
+                Domain-specific knowledge is only applicable to one specific application or domain.
+            </condition>
+            <condition name="l4" value="Tell me about long dash term">
+                Long-term knowledge is valid every time a programme is run.
+            </condition>
+            <condition name="l4" value="Tell me about short dash term">
+                Short-term knowledge is only valid for a particular instance or run of a programme.
+            </condition>
+            <condition name="l4" value="Tell me about generic">
+                Generic knowledge is relevant to more than one application or domain.
+            </condition>
+            <condition name="l4" value="Tell me about domain dash specific ">
+                Domain-specific knowledge is only applicable to one specific application or domain.
+            </condition>
+            <condition name="l4" value="Illustrate the concept of long dash term generic ">
+                The equations of motion used to calculate the flight-path of a bird in the game Angry Birds.
+            </condition>
+            <condition name="l4" value="Illustrate the concept of long dash term domain dash specific">
+                The weight of the different types of birds in the game Angry Birds.
+            </condition>
+            <condition name="l4" value="Illustrate the concept of short dash term generic">
+                The date on which a specific episode of Angry Birds is played is generic because it could also be used by another programme.
+            </condition>
+            <condition name="l4" value="Illustrate the concept of short dash term domain dash specific">
+                The number of birds that a user has fired in a particular episode of Angry Birds.
+            </condition>
+            <condition name="l4" value="Describe how AIML allows variables in its long dash term">
+                AIML has wildcards and srai for that purpose.
+            </condition>
+        </template>
+    </category>
+    <!--CATEGORY 4: * A * -->
+    <category>
+        <pattern>* A *</pattern>
+        <template>
+            <think><set name="l5"><star index="1"/></set></think>
+            <think><set name="r5"><star index="2"/></set></think>
+            <condition name="l5" value="Mybot please what is">
+                <condition name="r5" value="rule">
+                    A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+                </condition>
+            </condition>
+            <condition name="l5" value="Please myBot what is">
+                <condition name="r5" value="rule">
+                    A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.    
+                </condition>
+            </condition>
+            <condition name="l5" value="Describe">
+                <condition name="r5" value="fact">
+                    A fact is a statement which asserts that a relationship holds for an object-subject pair.
+                </condition>
+            </condition>
+            <condition name="l5" value="Describe">
+                <condition name="r5" value="rule">
+                     A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+                </condition>
+            </condition>
+            <condition name="l5" value="Tell me about">
+                <condition name="r5" value="fact">
+                     A fact is a statement which asserts that a relationship holds for an object-subject pair.
+                </condition>
+            </condition>
+            <condition name="l5" value="Tell me about">
+                <condition name="r5" value="rule">
+                     A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.
+                </condition>
+            </condition>
+            <condition name="l5" value="Illustrate the concept of">
+                <condition name="r5" value="fact">
+                     Jim Smith from UWE hasUWEPhoneNumber 0117 3287417.
+                </condition>
+            </condition>
+            <condition name="l5" value="Illustrate the concept of">
+                <condition name="r5" value="rule">
+                     If isUWEStaff(X) then hasUWEPhone (X).
+                </condition>
+            </condition>
+            <condition name="l5" value="How does AIML provide context during">
+                <condition name="r5" value="conversation">
+                     AIML supports context through the use of the that tag to refer to previous bot answers, and via setting variables such as topic.
+                </condition>
+            </condition>
+        </template>
+    </category>
+    <!--CATEGORY 5: WHY IS KNOWING THAT USEFUL? 1-->
+    <category>
+        <pattern>
+            Why is knowing that useful
+        </pattern>
+        <!--<that>-->
+        <!--    Jim Smith from UWE hasUWEPhoneNumber 0117 3287417-->
+        <!--</that>-->
+        <template>
+            I have no answer for that.
+        </template>
+    </category>
+    <!--CATEGORY 6: WHY IS KNOWING THAT USEFUL? 2-->
+    <category>
+        <pattern>
+            Why is knowing that useful
+        </pattern>
+        <that>
+            AIML has wildcards and srai for that purpose
+        </that>
+        <template>
+            Because it allows us to make statements that apply to classes of things or questions.
+        </template>
+    </category>
+    <!--CATEGORY 7: WHY IS KNOWING THAT USEFUL? 3-->
+    <category>
+        <pattern>
+            Why is knowing that useful
+        </pattern>
+        <that>
+            AIML supports context through the use of the that tag to refer to previous bot answers, and via setting variables such as topic
+        </that>
+        <template>
+            The fourth word in this question is an example of how some words can only be understood in context. 
+        </template>
+    </category>
+</aiml>
